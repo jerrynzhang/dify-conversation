@@ -20,7 +20,7 @@ const nextConfig = {
     return [
       {
         source: '/files/:path*',
-        destination: `${process.env.NEXT_PUBLIC_FILES_URL}/:path*`,
+        destination: process.env.NEXT_PUBLIC_FILES_URL ? `${process.env.NEXT_PUBLIC_FILES_URL}/:path*`: '/api/files/:path*', // Redirect to the API route
       },
     ]
   },
