@@ -11,8 +11,8 @@ const LogoSite: FC<LogoSiteProps> = ({
 }) => {
   return (
     <img
-      src={'/logo/logo.png'}
-      className={classNames('block w-[22.651px] h-[24.5px]', className)}
+      src="https://assets.dify.ai/images/dify_logo_dark.png"
+      className={classNames('block w-[28.651px] h-[24.5px]', className)}
       alt='logo'
     />
   )
